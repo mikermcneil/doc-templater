@@ -1,28 +1,27 @@
 {
-    "name": "docTemplater",
-    "private": true,
-    "version": "0.0.1",
-    "description": "Creates organized HTML documentation templates from sections of Github flavored markdown",
-    "dependencies": {
-        "marked": "0.2.10",
-        "fs-extra": "~0.8.1",
-        "lodash": "~2.4.1",
-        "node-jsondir": "git://github.com/dwieeb/node-jsondir.git"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/uncletammy/docTemplater.git"
-    },
-    "keywords": [
-        "gfmd",
-        "documentation templates",
-        "docs",
-        "markdown"
-    ],
-    "author": {
-        "name": "Nicholas Crumrine"
-    },
-    "main": "module.js",
-    "author": "",
-    "license": ""
+  "name": "docTemplater",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Creates organized HTML documentation templates from sections of Github flavored markdown",
+  "dependencies": {
+    "marked": "0.2.10",
+    "fs-extra": "~0.8.1",
+    "lodash": "~2.4.1",
+    "node-jsondir": "git://github.com/dwieeb/node-jsondir.git",
+    "jquery": "^2.1.0",
+    "jsdom": "^0.10.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uncletammy/docTemplater.git"
+  },
+  "keywords": [
+    "gfmd",
+    "documentation templates",
+    "docs",
+    "markdown"
+  ],
+  "author": "",
+  "main": "module.js",
+  "license": ""
 }
