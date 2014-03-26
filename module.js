@@ -31,13 +31,17 @@ var utils = {
 
 		var saveToDisk = function(err,html){
 			var afterConvertCB = cb;
-			if (err){
+
+			if (err) {
 				console.log('File save error:',err)
 				return afterConvertCB({type:'conversion',err:err})
-			} else {
-				return afterWriteCB(fs.outputFileSync(savePath + '.html', html));
 			}
 
+			// Perform some HTML transformations:
+			html = require('./transformHTML')(html, function (errors, transformedHTML) {
+				if (errors) return afterConvertCB({type:'conversion',err:errors});
+				return afterWriteCB(fs.outputFileSync(savePath + '.html', html));
+			});
 		}
 
 		//console.log('saving:',md)
@@ -356,5 +360,6 @@ function Docs(){
 
 
 module.exports = new Docs;
+
 
 
