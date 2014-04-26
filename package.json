@@ -7,7 +7,9 @@
     "marked": "0.2.10",
     "fs-extra": "~0.8.1",
     "lodash": "~2.4.1",
-    "node-jsondir": "git://github.com/dwieeb/node-jsondir.git"
+    "node-jsondir": "git://github.com/dwieeb/node-jsondir.git",
+    "highlight.js": "^8.0.0",
+    "switchback": "^0.2.0"
   },
   "repository": {
     "type": "git",

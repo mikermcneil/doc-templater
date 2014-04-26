@@ -57,7 +57,9 @@ describe('Compiler.prototype.build', function () {
       parsedTemplatesDirectory: TEST_OUTPUT_DIR
     }], function whenFinished (err, metadata){
       if (err) return done(err);
+      assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR)), 'Expected output directory was not created');
       assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Foo')), 'Expected output directory was not created');
+      assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Bar')), 'Expected output directory was not created');
       assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Foo/Foo.html')), 'Expected output file was not created');
       assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Foo/Testthing.html')), 'Expected output file was not created');
       assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Foo/TESTAGAIN.html')), 'Expected output file was not created');
@@ -78,7 +80,9 @@ describe('Compiler.prototype.build', function () {
       dontSplitFiles: true
     }], function whenFinished (err, metadata){
       if (err) return done(err);
-      assert(fsx.existsSync(TEST_OUTPUT_DIR));
+      assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR)), 'Expected output directory was not created');
+      assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Foo')), 'Expected output directory was not created');
+      assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Bar')), 'Expected output directory was not created');
       assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Foo/Foo.html')), 'Expected output file was not created');
       assert(fsx.existsSync(path.resolve(TEST_OUTPUT_DIR, 'Bar/Bar.html')), 'Expected output file was not created');
 
