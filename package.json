@@ -9,7 +9,9 @@
     "lodash": "~2.4.1",
     "node-jsondir": "git://github.com/dwieeb/node-jsondir.git",
     "highlight.js": "^8.0.0",
-    "switchback": "^0.2.0"
+    "switchback": "^0.2.0",
+    "node-switchback": "0.0.4",
+    "comandante": "0.0.1"
   },
   "repository": {
     "type": "git",
