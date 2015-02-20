@@ -162,3 +162,7 @@ This module is part of the [Node.js](http://nodejs.org) and [Sails framework](ht
  
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/a22d3919de208c90c898986619efaa85 "githalytics.com")](http://githalytics.com/balderdashy/doc-templater)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mikermcneil/doc-templater/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
